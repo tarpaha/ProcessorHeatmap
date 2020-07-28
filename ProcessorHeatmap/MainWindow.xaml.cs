@@ -146,17 +146,18 @@ namespace ProcessorHeatmap
             _refreshTimer.Interval = TimeSpan.FromSeconds(rate);
         }
 
-        public static (int, int) CalculateDimensions(int cellsCount)
+        // set initial cols = sqrt(cells) and then slowly increase cols count
+        // until cols * rows == cells
+        public static (int, int) CalculateDimensions(int cells)
         {
-            // work out how many columns and rows we need (closest square values)
-            double idealWidthAndHeight = Math.Sqrt(cellsCount);
-            int cols = (int)Math.Truncate(idealWidthAndHeight);
-            if (cols < idealWidthAndHeight)
+            var cols = (int)Math.Ceiling(Math.Sqrt(cells));
+            while (true)
             {
-                cols++;
+                var rows = (int)Math.Ceiling((double)cells / cols);
+                if (cols * rows == cells)
+                    return (cols, rows);
+                cols += 1;
             }
-            int rows = (int)Math.Truncate(idealWidthAndHeight);
-            return (cols, rows);
         }
     }
 }
