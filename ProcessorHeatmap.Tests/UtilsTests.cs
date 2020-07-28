@@ -36,6 +36,8 @@ namespace ProcessorHeatmap.Tests
         [TestCase(30, 6, 5)]
         [TestCase(31, 31, 1)]
         [TestCase(32, 8, 4)]
+        [TestCase(128, 16, 8)]
+        [TestCase(256, 16, 16)]
         public void CalculateDimensionsTests(int cellsCount, int cols, int rows)
         {
             Assert.That(MainWindow.CalculateDimensions(cellsCount), Is.EqualTo((cols, rows)));
