@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessorHeatmap", "ProcessorHeatmap\ProcessorHeatmap.csproj", "{30D49F4E-9F13-41F7-ADA4-FA3076CA748D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessorHeatmap.Tests", "ProcessorHeatmap.Tests\ProcessorHeatmap.Tests.csproj", "{E5AD8B22-72AC-499F-8C9A-00B5D0C4468E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,14 @@ Global
 		{30D49F4E-9F13-41F7-ADA4-FA3076CA748D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{30D49F4E-9F13-41F7-ADA4-FA3076CA748D}.Release|x64.ActiveCfg = Release|x64
 		{30D49F4E-9F13-41F7-ADA4-FA3076CA748D}.Release|x64.Build.0 = Release|x64
+		{E5AD8B22-72AC-499F-8C9A-00B5D0C4468E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5AD8B22-72AC-499F-8C9A-00B5D0C4468E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5AD8B22-72AC-499F-8C9A-00B5D0C4468E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E5AD8B22-72AC-499F-8C9A-00B5D0C4468E}.Debug|x64.Build.0 = Debug|Any CPU
+		{E5AD8B22-72AC-499F-8C9A-00B5D0C4468E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5AD8B22-72AC-499F-8C9A-00B5D0C4468E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5AD8B22-72AC-499F-8C9A-00B5D0C4468E}.Release|x64.ActiveCfg = Release|Any CPU
+		{E5AD8B22-72AC-499F-8C9A-00B5D0C4468E}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
