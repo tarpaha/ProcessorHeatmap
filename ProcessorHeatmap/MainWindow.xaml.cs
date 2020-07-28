@@ -44,7 +44,12 @@ namespace ProcessorHeatmap
             {
                 cols++;
             }
-            int rows = (int)Math.Truncate(idealWidthAndHeight);
+            double idealRows = (double)_cpuUsage.CoreCount / cols;
+            int rows = (int)Math.Truncate(idealRows);
+            if (rows < idealRows)
+            {
+                rows++;
+            }
 
             _rowCount = rows;
             _colCount = cols;
